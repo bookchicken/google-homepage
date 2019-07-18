@@ -47,7 +47,50 @@ table {
 	border-spacing: 0;
 }
 
-/* --------------------- */
+/* ---------- */
+body, td, a, p {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+}
+
+a {
+    color: #000;
+    opacity: .75;
+    text-decoration: none;
+}
+
+/* a:visited {
+    color: #609;
+} */
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+nav a {
+    padding-left: 15px;
+}
+
+#nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+
+#nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
+}
 
 #googleapps {
     height: 30px;
@@ -56,10 +99,37 @@ table {
     background-position: -132px -38px;
     background-size: 528px 68px;
     opacity: .55;
+    margin-left: 15px;
 }
 
 #googleapps:hover {
     opacity: .85;
 }
 
+.bluebtn {
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    padding: 0 12px;
+    border-radius: 2px;
+    line-height: 28px;
+}
+
+nav .bluebtn {
+    margin-left: 15px;
+}
+
+nav .bluebtn a {
+    text-decoration: none;
+}
+
+#nav-sign-in {
+    color: #fff;
+    opacity: 1;
+}
+
+#googleapps, #nav-sign-in {
+    padding: 0px;
+}
 
