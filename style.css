@@ -59,10 +59,6 @@ a {
     text-decoration: none;
 }
 
-/* a:visited {
-    color: #609;
-} */
-
 a:hover, a:active {
     text-decoration: underline;
 }
@@ -132,4 +128,11 @@ nav .bluebtn a {
 #googleapps, #nav-sign-in {
     padding: 0px;
 }
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
