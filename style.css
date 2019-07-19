@@ -132,7 +132,14 @@ nav .bluebtn a {
 #main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+#logo {
+    margin: 0 auto;
+}
+
+#main form {
+    margin: 0 auto;
 }
 
 
