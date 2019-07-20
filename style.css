@@ -54,13 +54,20 @@ body, td, a, p {
 }
 
 a {
-    color: #000;
-    opacity: .75;
+    color: #1a0dab;
     text-decoration: none;
+} 
+
+a:visited {
+    color: #609;
 }
 
 a:hover, a:active {
     text-decoration: underline;
+}
+
+.center {
+    margin: 0 auto;
 }
 
 nav {
@@ -70,7 +77,14 @@ nav {
 }
 
 nav a {
-    padding-left: 15px;
+    color: #000;
+    opacity: .75;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav a:visited {
+    color: #000;
 }
 
 #nav-left {
@@ -123,6 +137,7 @@ nav .bluebtn a {
 #nav-sign-in {
     color: #fff;
     opacity: 1;
+    margin: 0;
 }
 
 #googleapps, #nav-sign-in {
@@ -132,18 +147,21 @@ nav .bluebtn a {
 #main {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 #logo {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 #logo img {
     max-width: 391px;
 }
 
-#main form {
-    margin: 0 auto;
+#form1 {
+    display: flex;
+    justify-content: center;
 }
 
 #search-bar {
@@ -166,9 +184,8 @@ nav .bluebtn a {
     background-color: transparent;
     height: 44px;
     margin-left: 20px;
-}
-
-#text-search:focus {
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
     outline: none;
 }
 
@@ -182,4 +199,43 @@ nav .bluebtn a {
     margin: auto 0;
 }
 
+#search-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#search-buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-size: 14px;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+#search-buttons button:hover {
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+#text-msg {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+#alt-lang {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
 
