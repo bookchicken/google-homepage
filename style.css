@@ -48,6 +48,12 @@ table {
 }
 
 /* ---------- */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+} 
+
 body, td, a, p {
     font-family: arial, sans-serif;
     font-size: 13px;
@@ -148,6 +154,7 @@ nav .bluebtn a {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    flex: 1;
 }
 
 #logo {
@@ -239,3 +246,34 @@ nav .bluebtn a {
     margin-top: 40px;
 }
 
+footer {
+    background: #f2f2f2;
+    line-height: 40px;
+    color: rgba(0,0,0,.54);
+}
+
+footer p {
+    font-size: 15px;
+}
+
+#footer-region {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: 30px;
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3px;
+}
+
+#footer-links a {
+    margin-left: 27px;
+    color: rgb(95, 99, 104);
+}
+
+#footer-right {
+    margin-left: auto;
+    margin-right: 30px;
+}
